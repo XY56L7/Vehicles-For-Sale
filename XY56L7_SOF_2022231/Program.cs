@@ -15,7 +15,8 @@ namespace XY56L7_SOF_2022231
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            //TODO
+            
+
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 
