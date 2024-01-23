@@ -2,9 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using XY56L7_SOF_2022231.Data;
+using XY56L7_SOF_2022231.Logic;
+using XY56L7_SOF_2022231.Logic.Interfaces;
 using XY56L7_SOF_2022231.Models;
-using XY56L7_SOF_2022231.Repository;
-using XY56L7_SOF_2022231.Repository.Interfaces;
+
 
 namespace XY56L7_SOF_2022231
 {
@@ -38,8 +39,11 @@ namespace XY56L7_SOF_2022231
                 opt.ClientSecret = "0c53d80d8c50c98e852e7dc70eea66fd";
             }
           );
+            builder.Services.AddControllersWithViews();
+
             builder.Services.AddTransient<IEmailSender, EmailSender>();
-            builder.Services.AddTransient<ICarRepository, CarRepository>();
+            builder.Services.AddTransient<ICarLogic, CarLogic>();
+            builder.Services.AddTransient<IMotorcycleLogic, MotorcycleLogic>();
 
             var app = builder.Build();
 
@@ -59,6 +63,7 @@ namespace XY56L7_SOF_2022231
             app.UseStaticFiles();
 
             app.UseRouting();
+
 
             app.UseAuthentication();
             app.UseAuthorization();

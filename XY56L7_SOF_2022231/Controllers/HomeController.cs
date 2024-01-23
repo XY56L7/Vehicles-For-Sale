@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using XY56L7_SOF_2022231.Data;
+using XY56L7_SOF_2022231.Logic.Interfaces;
 using XY56L7_SOF_2022231.Models;
-using XY56L7_SOF_2022231.Repository.Interfaces;
+
 
 namespace XY56L7_SOF_2022231.Controllers
 {
@@ -14,10 +15,10 @@ namespace XY56L7_SOF_2022231.Controllers
         private readonly UserManager<SiteUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<HomeController> _logger;
-        private readonly ICarRepository _carRepository;
+        private readonly ICarLogic _carRepository;
         private readonly IEmailSender _emailSender;
 
-        public HomeController(UserManager<SiteUser> userManager, RoleManager<IdentityRole> roleManager, ILogger<HomeController> logger, ICarRepository carRepository, IEmailSender emailSender)
+        public HomeController(UserManager<SiteUser> userManager, RoleManager<IdentityRole> roleManager, ILogger<HomeController> logger, ICarLogic carRepository, IEmailSender emailSender)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -25,6 +26,7 @@ namespace XY56L7_SOF_2022231.Controllers
             _carRepository = carRepository;
             _emailSender = emailSender;
         }
+
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> RemoveAdmin(string uid)
         {

@@ -1,11 +1,14 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@model IEnumerable<Car>
+@model IEnumerable<Motorcycle>
 @inject SignInManager<SiteUser> SignInManager
 @inject UserManager<SiteUser> UserManager
 
-<h1>@UserManager.GetUserName(User)</h1>
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
 
 <ul>
+
     @foreach (var movie in Model.GroupBy(t => t.Title))
     {
         <li class="title">
@@ -18,7 +21,7 @@
                         @item.Owner.FirstName @item.Owner.LastName
                         @if (item.OwnerId == UserManager.GetUserId(User))
                         {
-                            <a href="Home/Delete?uid=@item.Uid">Delete</a>
+                            <a href="MotorCycle/Delete?uid=@item.Uid">Delete</a>
                         }
                     </li>
                 }

@@ -9,6 +9,7 @@ namespace XY56L7_SOF_2022231.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Car> Cars { get; set; }
+        public DbSet<Motorcycle> Motorcycles { get; set; }
         public DbSet<SiteUser> Users { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -45,10 +46,19 @@ namespace XY56L7_SOF_2022231.Data
                     Title = $"{carModel} {i}",
                     OwnerId = user.Id
                 };
-
+                Motorcycle motorcycle = new Motorcycle
+                {
+                    Uid = Guid.NewGuid().ToString(),
+                    Title = $"{carModel} {i}",
+                    OwnerId = user.Id
+                };
+                builder.Entity<Motorcycle>().HasData(car);
                 builder.Entity<Car>().HasData(car);
                 builder.Entity<SiteUser>().HasData(user);
             }
+
+
+
 
             builder.Entity<Car>()
                 .HasOne(t => t.Owner)
@@ -56,9 +66,14 @@ namespace XY56L7_SOF_2022231.Data
                 .HasForeignKey(t => t.OwnerId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-           
+            builder.Entity<Motorcycle>()
+               .HasOne(t => t.Owner)
+               .WithMany()
+               .HasForeignKey(t => t.OwnerId)
+               .OnDelete(DeleteBehavior.Cascade);
 
-            
+
+
             base.OnModelCreating(builder);
         }
 

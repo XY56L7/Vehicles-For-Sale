@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using XY56L7_SOF_2022231.Data;
 
@@ -11,9 +12,10 @@ using XY56L7_SOF_2022231.Data;
 namespace XY56L7_SOF_2022231.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240123144922_Motorcycle")]
+    partial class Motorcycle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -252,121 +254,121 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Uid = "44ad334d-7910-4d92-b2c5-57352a245068",
+                            Uid = "f3dc3f9c-afd6-46dd-9561-e17dba2f8b56",
                             OwnerId = "user1",
                             Title = "Phoenix 1"
                         },
                         new
                         {
-                            Uid = "bdbe8e5f-6076-43d5-9833-1e832aba4ce7",
+                            Uid = "df80ef82-2d5d-456a-be36-1f04f6448644",
                             OwnerId = "user2",
                             Title = "Nebula 2"
                         },
                         new
                         {
-                            Uid = "812fe2ec-5704-4f8a-8521-cc9055023122",
+                            Uid = "3045100d-d9b4-4e14-9a5b-ced1af130365",
                             OwnerId = "user3",
                             Title = "Quantum 3"
                         },
                         new
                         {
-                            Uid = "acf5177a-c8be-4575-83b3-bce0d5722a70",
+                            Uid = "a20df922-92e2-4f2b-9fc4-712fb38efe5a",
                             OwnerId = "user4",
                             Title = "Infinity 4"
                         },
                         new
                         {
-                            Uid = "545e13e1-6c18-43d1-953e-e75c68a97fe9",
+                            Uid = "d5b0fd8c-fb09-4508-8943-24144e9da6a4",
                             OwnerId = "user5",
                             Title = "Pegasus 5"
                         },
                         new
                         {
-                            Uid = "39a0c1a9-f874-4918-a374-f59ccc1b7bee",
+                            Uid = "293d244a-88f2-4ef1-b3a1-bf6a9348a693",
                             OwnerId = "user6",
                             Title = "Aurora 6"
                         },
                         new
                         {
-                            Uid = "c34bdbc1-d47a-49dd-be62-55804b45f435",
+                            Uid = "9b7cce93-d081-4e93-bcd6-4457b076b33a",
                             OwnerId = "user7",
                             Title = "Raptor 7"
                         },
                         new
                         {
-                            Uid = "12f01652-5372-4db0-889f-3c3834f9484b",
+                            Uid = "98eeb3f5-b70a-4cf3-8def-2bb5af6c984e",
                             OwnerId = "user8",
                             Title = "Zenith 8"
                         },
                         new
                         {
-                            Uid = "b2adaf73-99d7-4867-a5b2-89f5f1298ef7",
+                            Uid = "cfb20bc7-5d7f-4ed3-9fb9-99858ea71b52",
                             OwnerId = "user9",
                             Title = "Vortex 9"
                         },
                         new
                         {
-                            Uid = "b399f290-9f2a-480e-8572-77c067ade7e3",
+                            Uid = "4125a4c2-813e-4f36-819e-3f683e031e1d",
                             OwnerId = "user10",
                             Title = "Spectra 10"
                         },
                         new
                         {
-                            Uid = "4ab5739b-5ba4-4e4a-a5df-01043917da81",
+                            Uid = "ea06d6e5-06f3-4f65-9d14-123b727a69c4",
                             OwnerId = "user11",
                             Title = "Phoenix 11"
                         },
                         new
                         {
-                            Uid = "c3329ff7-b781-4d4f-b8dc-e9abbf1aa26d",
+                            Uid = "a900632f-de6c-4adc-b8b7-74d3d78f7438",
                             OwnerId = "user12",
                             Title = "Nebula 12"
                         },
                         new
                         {
-                            Uid = "52cb1b8a-17ff-4711-9985-ec442dbe4930",
+                            Uid = "ae39701b-3063-454d-86a5-34dd1ab935dc",
                             OwnerId = "user13",
                             Title = "Quantum 13"
                         },
                         new
                         {
-                            Uid = "8fdf35fc-bcd0-478a-ade4-8ac2034ef4bd",
+                            Uid = "68e099e4-c7c0-4282-8ec4-a2ace8c780e3",
                             OwnerId = "user14",
                             Title = "Infinity 14"
                         },
                         new
                         {
-                            Uid = "7a0aceed-dca1-4ddd-844f-91d5354ac347",
+                            Uid = "ff4fb049-02c8-4b20-91b9-0c9147182657",
                             OwnerId = "user15",
                             Title = "Pegasus 15"
                         },
                         new
                         {
-                            Uid = "7312b3bb-0bd4-409e-a301-4cdb5516a1d7",
+                            Uid = "1d71645b-7104-4bfc-816d-9f43a02ee9ab",
                             OwnerId = "user16",
                             Title = "Aurora 16"
                         },
                         new
                         {
-                            Uid = "5456318e-ff19-49ec-92fb-2d9cce7e5e5a",
+                            Uid = "d17e7174-553a-46c9-8f3c-d8513ceeb864",
                             OwnerId = "user17",
                             Title = "Raptor 17"
                         },
                         new
                         {
-                            Uid = "217231fa-38d1-47cb-88fb-206c01cfa90b",
+                            Uid = "8d8cb1d5-bab2-44c1-8c0c-03b371493d34",
                             OwnerId = "user18",
                             Title = "Zenith 18"
                         },
                         new
                         {
-                            Uid = "a3a933bb-6151-42a3-9d46-c3bf158d0645",
+                            Uid = "5c6c5e73-9461-4c38-9dcb-5f1502a2aba0",
                             OwnerId = "user19",
                             Title = "Vortex 19"
                         },
                         new
                         {
-                            Uid = "64fcfcf1-b670-4975-a8e9-bb7bbe873639",
+                            Uid = "b142918e-e941-4f60-9545-813f16101ea9",
                             OwnerId = "user20",
                             Title = "Spectra 20"
                         });
@@ -390,128 +392,6 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                     b.HasIndex("OwnerId");
 
                     b.ToTable("Motorcycles");
-
-                    b.HasData(
-                        new
-                        {
-                            Uid = "44ad334d-7910-4d92-b2c5-57352a245068",
-                            OwnerId = "user1",
-                            Title = "Phoenix 1"
-                        },
-                        new
-                        {
-                            Uid = "bdbe8e5f-6076-43d5-9833-1e832aba4ce7",
-                            OwnerId = "user2",
-                            Title = "Nebula 2"
-                        },
-                        new
-                        {
-                            Uid = "812fe2ec-5704-4f8a-8521-cc9055023122",
-                            OwnerId = "user3",
-                            Title = "Quantum 3"
-                        },
-                        new
-                        {
-                            Uid = "acf5177a-c8be-4575-83b3-bce0d5722a70",
-                            OwnerId = "user4",
-                            Title = "Infinity 4"
-                        },
-                        new
-                        {
-                            Uid = "545e13e1-6c18-43d1-953e-e75c68a97fe9",
-                            OwnerId = "user5",
-                            Title = "Pegasus 5"
-                        },
-                        new
-                        {
-                            Uid = "39a0c1a9-f874-4918-a374-f59ccc1b7bee",
-                            OwnerId = "user6",
-                            Title = "Aurora 6"
-                        },
-                        new
-                        {
-                            Uid = "c34bdbc1-d47a-49dd-be62-55804b45f435",
-                            OwnerId = "user7",
-                            Title = "Raptor 7"
-                        },
-                        new
-                        {
-                            Uid = "12f01652-5372-4db0-889f-3c3834f9484b",
-                            OwnerId = "user8",
-                            Title = "Zenith 8"
-                        },
-                        new
-                        {
-                            Uid = "b2adaf73-99d7-4867-a5b2-89f5f1298ef7",
-                            OwnerId = "user9",
-                            Title = "Vortex 9"
-                        },
-                        new
-                        {
-                            Uid = "b399f290-9f2a-480e-8572-77c067ade7e3",
-                            OwnerId = "user10",
-                            Title = "Spectra 10"
-                        },
-                        new
-                        {
-                            Uid = "4ab5739b-5ba4-4e4a-a5df-01043917da81",
-                            OwnerId = "user11",
-                            Title = "Phoenix 11"
-                        },
-                        new
-                        {
-                            Uid = "c3329ff7-b781-4d4f-b8dc-e9abbf1aa26d",
-                            OwnerId = "user12",
-                            Title = "Nebula 12"
-                        },
-                        new
-                        {
-                            Uid = "52cb1b8a-17ff-4711-9985-ec442dbe4930",
-                            OwnerId = "user13",
-                            Title = "Quantum 13"
-                        },
-                        new
-                        {
-                            Uid = "8fdf35fc-bcd0-478a-ade4-8ac2034ef4bd",
-                            OwnerId = "user14",
-                            Title = "Infinity 14"
-                        },
-                        new
-                        {
-                            Uid = "7a0aceed-dca1-4ddd-844f-91d5354ac347",
-                            OwnerId = "user15",
-                            Title = "Pegasus 15"
-                        },
-                        new
-                        {
-                            Uid = "7312b3bb-0bd4-409e-a301-4cdb5516a1d7",
-                            OwnerId = "user16",
-                            Title = "Aurora 16"
-                        },
-                        new
-                        {
-                            Uid = "5456318e-ff19-49ec-92fb-2d9cce7e5e5a",
-                            OwnerId = "user17",
-                            Title = "Raptor 17"
-                        },
-                        new
-                        {
-                            Uid = "217231fa-38d1-47cb-88fb-206c01cfa90b",
-                            OwnerId = "user18",
-                            Title = "Zenith 18"
-                        },
-                        new
-                        {
-                            Uid = "a3a933bb-6151-42a3-9d46-c3bf158d0645",
-                            OwnerId = "user19",
-                            Title = "Vortex 19"
-                        },
-                        new
-                        {
-                            Uid = "64fcfcf1-b670-4975-a8e9-bb7bbe873639",
-                            OwnerId = "user20",
-                            Title = "Spectra 20"
-                        });
                 });
 
             modelBuilder.Entity("XY56L7_SOF_2022231.Models.SiteUser", b =>
@@ -544,12 +424,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b762dfc9-a023-466b-8e1a-b87a89cfb39e",
+                            ConcurrencyStamp = "7999b68f-394a-459e-877d-1bbdb0765ff1",
                             Email = "user1@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d9ee92dc-2720-43cd-815a-61e73e737eb9",
+                            SecurityStamp = "864e2fe5-de92-4262-b2fa-a35dedc11a27",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 1, 2, 3 },
@@ -561,12 +441,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8d0e0b92-6b21-4e3b-a4e8-bff21f3a5ceb",
+                            ConcurrencyStamp = "a094c085-7123-4a4d-b6cb-ff465c824116",
                             Email = "user2@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "054d4c96-7e7b-4e5b-a02f-8639f914be51",
+                            SecurityStamp = "de1b61f3-5189-4d11-8d81-3b8520ad1538",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 2, 3, 4 },
@@ -578,12 +458,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user3",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "454a8691-443d-4d95-990d-bf53b9bc1bdf",
+                            ConcurrencyStamp = "b6985104-1521-49b7-acf7-a1efcb5e2d5e",
                             Email = "user3@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e9a679de-3aed-43de-b1a8-082cdb843fd2",
+                            SecurityStamp = "74d86ff9-2ad9-43c5-833b-981f573d5121",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 3, 4, 5 },
@@ -595,12 +475,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "83ca6f47-87d3-4ad8-8d3c-22ef70f13635",
+                            ConcurrencyStamp = "bedb3439-6f5b-4f96-b113-6f0df9369d65",
                             Email = "user4@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f544dfb5-8485-4d5b-8957-f594f6f3c503",
+                            SecurityStamp = "b64e3030-16ed-478f-80ab-fa623dd10677",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 4, 5, 6 },
@@ -612,12 +492,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "32da52e7-9cb8-4f92-93ae-f613918cc107",
+                            ConcurrencyStamp = "bea03b12-ae79-4630-a384-fe36c25cea42",
                             Email = "user5@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "81fbcc20-7aaa-426e-8d98-335d89857e95",
+                            SecurityStamp = "a083feb3-54b3-4c6d-a887-551371a203e2",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 5, 6, 7 },
@@ -629,12 +509,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user6",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7bc0dcfa-3228-4113-a6e8-10697528789b",
+                            ConcurrencyStamp = "2761a6ef-a5db-4d39-8e18-15b8d8a21636",
                             Email = "user6@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d2747fca-dec5-4320-90e2-7f5c83561fc2",
+                            SecurityStamp = "5639618c-263c-4a2c-b4c7-fdd0b539aed9",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 6, 7, 8 },
@@ -646,12 +526,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2991e5ce-3dad-4ebf-a2ca-b531e3bea7e9",
+                            ConcurrencyStamp = "714178df-aafd-4d15-9f52-6feb668f4d58",
                             Email = "user7@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c742bde3-5b38-4fa9-87b6-7533c8bb03fc",
+                            SecurityStamp = "3681d6e9-594f-49f2-b419-ec364acd1423",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 7, 8, 9 },
@@ -663,12 +543,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1d18561c-d7f5-43ea-9d6a-5bb9da296c34",
+                            ConcurrencyStamp = "b07d8bdc-1fc7-4e0c-b798-a254db094f2a",
                             Email = "user8@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6779fba3-ea66-47ab-a17b-ded3f7551631",
+                            SecurityStamp = "b5abd512-ba42-4ce1-9ef5-02c91dbeeab7",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 8, 9, 10 },
@@ -680,12 +560,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cc8698d3-4d7a-47d2-9068-5ea997310967",
+                            ConcurrencyStamp = "a6871427-512f-41b5-9aa9-93334612e979",
                             Email = "user9@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b29bf648-f74b-4b49-996f-b1c405597dbb",
+                            SecurityStamp = "2e444729-a70d-41d6-9676-08ca4279f12d",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 9, 10, 11 },
@@ -697,12 +577,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user10",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6a9ed30e-3c03-4b46-82e5-8dc58fa317b3",
+                            ConcurrencyStamp = "3a7425bd-4684-4580-878b-9ccef2eed3ed",
                             Email = "user10@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b8df631c-9a62-4259-b2a5-cbde8a3d88c9",
+                            SecurityStamp = "e867c6f1-4420-4322-b538-d6e697a7c754",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 10, 11, 12 },
@@ -714,12 +594,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user11",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bd3fac12-da74-4431-93f9-13135e3ee076",
+                            ConcurrencyStamp = "5b43eb42-5580-4485-97ac-2a08402bc850",
                             Email = "user11@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ccf7c58e-572d-42af-9164-f2361df10a64",
+                            SecurityStamp = "ddd7e167-e873-4c04-8b89-25b6ff5ec4eb",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 11, 12, 13 },
@@ -731,12 +611,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user12",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ea846e7-87d6-4e06-910c-6f7346f85b6f",
+                            ConcurrencyStamp = "0439418d-0441-41b6-8373-0581bd09d6d2",
                             Email = "user12@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b5c1ec5a-3a94-4e87-8bc7-30190e54c7dd",
+                            SecurityStamp = "5aab3d89-c70a-47af-992c-3e11c9bdbf97",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 12, 13, 14 },
@@ -748,12 +628,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user13",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4c54c25d-86b5-4a74-b9c4-3f6013eb7e87",
+                            ConcurrencyStamp = "b85dbde8-e943-4d88-a5a5-a113d5d2fb30",
                             Email = "user13@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2bfd08e7-f236-48ac-bf5a-55114c93746b",
+                            SecurityStamp = "8cc9d089-9a55-4518-aacc-b202d3a7cdd2",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 13, 14, 15 },
@@ -765,12 +645,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user14",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1e6a95c7-f46f-417b-9315-269c94d0690e",
+                            ConcurrencyStamp = "5b59d596-d78e-4506-8e63-6445b244f349",
                             Email = "user14@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8486ca38-c629-4e51-be34-d2561a62b2b0",
+                            SecurityStamp = "088c154d-2c74-4fd5-9a93-1b9c0ecc6877",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 14, 15, 16 },
@@ -782,12 +662,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user15",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0045ccfd-b413-42ca-96de-ad1af7742d67",
+                            ConcurrencyStamp = "a82891ed-6399-4c51-aa75-832e85eb1f7b",
                             Email = "user15@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9b870862-e23d-432a-81ef-2df6396897dd",
+                            SecurityStamp = "74c23604-457d-45ef-bc72-22c3bb30b607",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 15, 16, 17 },
@@ -799,12 +679,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user16",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1e2c2670-2d22-40af-a0df-2f64cc67cc83",
+                            ConcurrencyStamp = "5b9491b1-8169-4ab1-bc62-7e3e69e66978",
                             Email = "user16@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c52a9290-08a2-465e-8d3e-602179851e49",
+                            SecurityStamp = "89e7d79c-422f-4ea0-8ae2-9e4482a2fd4b",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 16, 17, 18 },
@@ -816,12 +696,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user17",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3ec1fd15-bbdc-4226-ab7c-e8407145151e",
+                            ConcurrencyStamp = "b39b0e62-f116-477c-9feb-203a485bbf92",
                             Email = "user17@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b7920fb-9d0c-4fef-9a1c-8f6301b870c9",
+                            SecurityStamp = "0a3e4747-5aff-48c2-a68c-625e550a0ddc",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 17, 18, 19 },
@@ -833,12 +713,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user18",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "501853ea-7f77-4b4d-a413-2f8bbbe8715e",
+                            ConcurrencyStamp = "76100233-a69c-47f4-ac5e-8321b722595c",
                             Email = "user18@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4b9223f4-0eb3-4a36-98fd-77e0223bfb16",
+                            SecurityStamp = "f48bd03c-27b2-46eb-8291-0843e88614a8",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 18, 19, 20 },
@@ -850,12 +730,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user19",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c1068255-dcd1-459f-bb12-4aae4110e500",
+                            ConcurrencyStamp = "cfffb6cb-ea3f-4e35-8b47-4c670e56390a",
                             Email = "user19@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "74ccd812-5a24-4c6f-8246-baca19bd6afe",
+                            SecurityStamp = "12d8f133-f3d8-4948-83eb-4e4daf0c9fec",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 19, 20, 21 },
@@ -867,12 +747,12 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user20",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7072959d-55b8-4091-a27e-f0159267437e",
+                            ConcurrencyStamp = "b554f686-af01-4236-83b9-373824842642",
                             Email = "user20@example.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cb0d682b-dd88-4a03-9159-82e57217bb90",
+                            SecurityStamp = "982c4503-60ed-433d-bece-a81d42c7a26d",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 20, 21, 22 },

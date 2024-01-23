@@ -1,8 +1,8 @@
 ﻿using XY56L7_SOF_2022231.Models;
 
-namespace XY56L7_SOF_2022231.Repository.Interfaces
+namespace XY56L7_SOF_2022231.Logic.Interfaces
 {
-    public interface ICarRepository
+    public interface ICarLogic
     {
         IEnumerable<Car> GetAllCars();
         Car GetCarByTitleAndOwnerId(string title, string ownerId);

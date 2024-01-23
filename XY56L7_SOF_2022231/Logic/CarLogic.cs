@@ -1,14 +1,14 @@
 ﻿using XY56L7_SOF_2022231.Data;
+using XY56L7_SOF_2022231.Logic.Interfaces;
 using XY56L7_SOF_2022231.Models;
-using XY56L7_SOF_2022231.Repository.Interfaces;
 
-namespace XY56L7_SOF_2022231.Repository
+namespace XY56L7_SOF_2022231.Logic
 {
-    public class CarRepository : ICarRepository
+    public class CarLogic : ICarLogic
     {
         private readonly ApplicationDbContext _db;
 
-        public CarRepository(ApplicationDbContext db)
+        public CarLogic(ApplicationDbContext db)
         {
             _db = db;
         }
