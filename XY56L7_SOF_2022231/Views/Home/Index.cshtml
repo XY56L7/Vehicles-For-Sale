@@ -1,4 +1,18 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿<style>
+    ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li.title {
+    }
+
+    li.owner {
+    }
+</style>
+
+@using Microsoft.AspNetCore.Identity
 @model IEnumerable<Car>
 @inject SignInManager<SiteUser> SignInManager
 @inject UserManager<SiteUser> UserManager
