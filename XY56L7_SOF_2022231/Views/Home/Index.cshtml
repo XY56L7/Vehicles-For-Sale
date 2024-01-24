@@ -16,9 +16,14 @@
                     <li class="owner">
                         <img src="@Url.Action("GetImage", "Home", new { userid = item.OwnerId })" />
                         @item.Owner.FirstName @item.Owner.LastName
+
                         @if (item.OwnerId == UserManager.GetUserId(User))
                         {
                             <a href="Home/Delete?uid=@item.Uid">Delete</a>
+                        }
+                        @if (item.OwnerId != UserManager.GetUserId(User))
+                        {
+                            <a href="javascript:void(0);" onclick="buyCar('@item.Uid')">Buy</a>
                         }
                     </li>
                 }
@@ -26,3 +31,12 @@
         </li>
     }
 </ul>
+
+<script>
+    function buyCar(uid) {
+        var confirmation = confirm("Are you sure you want to buy this car?");
+        if (confirmation) {
+            window.location.href = "Home/Delete?uid=" + uid;
+        }
+    }
+</script>

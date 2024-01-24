@@ -1,27 +1,30 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿
+@using Microsoft.AspNetCore.Identity
 @model IEnumerable<Motorcycle>
 @inject SignInManager<SiteUser> SignInManager
 @inject UserManager<SiteUser> UserManager
 
-@{
-    var user = await UserManager.GetUserAsync(User);
-}
+<h1>@UserManager.GetUserName(User)</h1>
 
 <ul>
-
-    @foreach (var movie in Model.GroupBy(t => t.Title))
+    @foreach (var motorcycle in Model.GroupBy(t => t.Title))
     {
         <li class="title">
-            @movie.Key
+            @motorcycle.Key
             <ul>
-                @foreach (var item in movie)
+                @foreach (var item in motorcycle)
                 {
                     <li class="owner">
                         <img src="@Url.Action("GetImage", "Home", new { userid = item.OwnerId })" />
                         @item.Owner.FirstName @item.Owner.LastName
+
                         @if (item.OwnerId == UserManager.GetUserId(User))
                         {
-                            <a href="MotorCycle/Delete?uid=@item.Uid">Delete</a>
+                            <a href="Motorcycle/Delete?uid=@item.Uid">Delete</a>
+                        }
+                        @if (item.OwnerId != UserManager.GetUserId(User))
+                        {
+                            <a href="javascript:void(0);" onclick="buyCar('@item.Uid')">Buy</a>
                         }
                     </li>
                 }
@@ -29,3 +32,12 @@
         </li>
     }
 </ul>
+
+<script>
+    function buyCar(uid) {
+        var confirmation = confirm("Are you sure you want to buy this motorcycle?");
+        if (confirmation) {
+            window.location.href = "Motorcycle/Delete?uid=" + uid;
+        }
+    }
+</script>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using XY56L7_SOF_2022231.Data;
 
@@ -11,9 +12,10 @@ using XY56L7_SOF_2022231.Data;
 namespace XY56L7_SOF_2022231.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240124181547_Validation")]
+    partial class Validation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -258,7 +260,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Uid = "b01601d9-3724-4366-8d60-9a3e0fb23b6f",
+                            Uid = "5003f6c2-7778-4bab-8d28-d0dad5d78eb0",
                             Age = 10,
                             OwnerId = "user1",
                             Price = 20000,
@@ -266,7 +268,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "e009c034-49cb-4959-8deb-af66f407ac01",
+                            Uid = "8d8e1150-e2ae-4067-a573-290a7eb033b8",
                             Age = 10,
                             OwnerId = "user2",
                             Price = 20000,
@@ -274,7 +276,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "cb2639ff-cb28-4392-a46d-b5c370de38c3",
+                            Uid = "3191fa4c-6fd9-471d-8d44-4db7aff7420b",
                             Age = 10,
                             OwnerId = "user3",
                             Price = 20000,
@@ -282,7 +284,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "ed404289-9f19-47b4-bf8c-97fba01066a2",
+                            Uid = "5f580c1e-5be8-4503-89fa-3119cf5e1f8d",
                             Age = 10,
                             OwnerId = "user4",
                             Price = 20000,
@@ -290,7 +292,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "22c06b4b-7280-4c03-86af-7e700ad1b4b2",
+                            Uid = "a35d6aa2-3c79-45a2-8f5b-6548b2c99be7",
                             Age = 10,
                             OwnerId = "user5",
                             Price = 20000,
@@ -298,7 +300,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "12e15201-9619-42a2-b910-e09edd23677e",
+                            Uid = "7d744dc7-daab-42c1-b064-2f12cca4da76",
                             Age = 10,
                             OwnerId = "user6",
                             Price = 20000,
@@ -306,7 +308,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "4e2eff9f-f520-4f72-b228-bcfccc74e2ae",
+                            Uid = "a794a728-46b6-4339-a133-552aa7b34cfe",
                             Age = 10,
                             OwnerId = "user7",
                             Price = 20000,
@@ -314,7 +316,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "c8923f1f-d08a-4b63-a36b-e0b006103dc1",
+                            Uid = "d8bc3fa3-d5a2-4390-8a70-786b7a4950e0",
                             Age = 10,
                             OwnerId = "user8",
                             Price = 20000,
@@ -322,7 +324,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "72eb46d7-c487-4f01-bad1-2c85054cbd0f",
+                            Uid = "1d5447e1-0ccf-4b85-b6f7-0b95dc2218bf",
                             Age = 10,
                             OwnerId = "user9",
                             Price = 20000,
@@ -330,7 +332,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "28970963-fdea-4e70-b657-2bfb2bc20f56",
+                            Uid = "e9ea500f-67e8-48b5-9cd3-1e0cbca0d4e4",
                             Age = 10,
                             OwnerId = "user10",
                             Price = 20000,
@@ -338,7 +340,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "f357caf7-0bf9-46df-bbee-4b145af17117",
+                            Uid = "7b0220ae-f5cd-4a92-b340-91894d4e9b7c",
                             Age = 10,
                             OwnerId = "user11",
                             Price = 20000,
@@ -346,7 +348,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "cda99043-7e41-4fe3-8155-00c35d1096a7",
+                            Uid = "5ed96804-deeb-4139-aa45-c2c80f8c0bea",
                             Age = 10,
                             OwnerId = "user12",
                             Price = 20000,
@@ -354,7 +356,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "e5c79840-279a-4f14-ade7-6155738191ba",
+                            Uid = "574d36d3-1991-407c-8e21-bef7a3b73b1a",
                             Age = 10,
                             OwnerId = "user13",
                             Price = 20000,
@@ -362,7 +364,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "102e5464-03c2-4298-b8b3-456c762e52b5",
+                            Uid = "019e0fe8-cd1e-4ba0-81f8-6bbe9d69eff3",
                             Age = 10,
                             OwnerId = "user14",
                             Price = 20000,
@@ -370,7 +372,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "652a38e2-0de6-455d-8402-0a096446783a",
+                            Uid = "4b1dd94c-e5ba-4d90-b16f-100feaea9831",
                             Age = 10,
                             OwnerId = "user15",
                             Price = 20000,
@@ -378,7 +380,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "630bcea6-893f-43c5-8b17-fa194a1baa40",
+                            Uid = "d9074204-9537-4e65-91c6-e17e0dd10313",
                             Age = 10,
                             OwnerId = "user16",
                             Price = 20000,
@@ -386,7 +388,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "94387b93-944a-4e24-a084-9a00aba21bb8",
+                            Uid = "5a8df38a-d704-4dc0-841f-94fbf9c2bf5a",
                             Age = 10,
                             OwnerId = "user17",
                             Price = 20000,
@@ -394,7 +396,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "084599a9-8d58-428a-9799-1543fed0237d",
+                            Uid = "16ac288c-40fd-4295-b558-65d6d8c758d2",
                             Age = 10,
                             OwnerId = "user18",
                             Price = 20000,
@@ -402,7 +404,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "8e39203d-0292-4de5-8cee-dcc6df29a967",
+                            Uid = "292bf993-0e53-4cc7-bf0a-8237fc5e084a",
                             Age = 10,
                             OwnerId = "user19",
                             Price = 20000,
@@ -410,7 +412,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "6dc7ac57-b8e0-4db5-bd4c-a52795a69aba",
+                            Uid = "8b3d9815-76c5-4c6c-a67d-d07aea8d0e5d",
                             Age = 10,
                             OwnerId = "user20",
                             Price = 20000,
@@ -446,7 +448,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Uid = "b01601d9-3724-4366-8d60-9a3e0fb23b6f",
+                            Uid = "5003f6c2-7778-4bab-8d28-d0dad5d78eb0",
                             Age = 10,
                             OwnerId = "user1",
                             Price = 20000,
@@ -454,7 +456,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "e009c034-49cb-4959-8deb-af66f407ac01",
+                            Uid = "8d8e1150-e2ae-4067-a573-290a7eb033b8",
                             Age = 10,
                             OwnerId = "user2",
                             Price = 20000,
@@ -462,7 +464,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "cb2639ff-cb28-4392-a46d-b5c370de38c3",
+                            Uid = "3191fa4c-6fd9-471d-8d44-4db7aff7420b",
                             Age = 10,
                             OwnerId = "user3",
                             Price = 20000,
@@ -470,7 +472,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "ed404289-9f19-47b4-bf8c-97fba01066a2",
+                            Uid = "5f580c1e-5be8-4503-89fa-3119cf5e1f8d",
                             Age = 10,
                             OwnerId = "user4",
                             Price = 20000,
@@ -478,7 +480,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "22c06b4b-7280-4c03-86af-7e700ad1b4b2",
+                            Uid = "a35d6aa2-3c79-45a2-8f5b-6548b2c99be7",
                             Age = 10,
                             OwnerId = "user5",
                             Price = 20000,
@@ -486,7 +488,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "12e15201-9619-42a2-b910-e09edd23677e",
+                            Uid = "7d744dc7-daab-42c1-b064-2f12cca4da76",
                             Age = 10,
                             OwnerId = "user6",
                             Price = 20000,
@@ -494,7 +496,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "4e2eff9f-f520-4f72-b228-bcfccc74e2ae",
+                            Uid = "a794a728-46b6-4339-a133-552aa7b34cfe",
                             Age = 10,
                             OwnerId = "user7",
                             Price = 20000,
@@ -502,7 +504,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "c8923f1f-d08a-4b63-a36b-e0b006103dc1",
+                            Uid = "d8bc3fa3-d5a2-4390-8a70-786b7a4950e0",
                             Age = 10,
                             OwnerId = "user8",
                             Price = 20000,
@@ -510,7 +512,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "72eb46d7-c487-4f01-bad1-2c85054cbd0f",
+                            Uid = "1d5447e1-0ccf-4b85-b6f7-0b95dc2218bf",
                             Age = 10,
                             OwnerId = "user9",
                             Price = 20000,
@@ -518,7 +520,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "28970963-fdea-4e70-b657-2bfb2bc20f56",
+                            Uid = "e9ea500f-67e8-48b5-9cd3-1e0cbca0d4e4",
                             Age = 10,
                             OwnerId = "user10",
                             Price = 20000,
@@ -526,7 +528,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "f357caf7-0bf9-46df-bbee-4b145af17117",
+                            Uid = "7b0220ae-f5cd-4a92-b340-91894d4e9b7c",
                             Age = 10,
                             OwnerId = "user11",
                             Price = 20000,
@@ -534,7 +536,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "cda99043-7e41-4fe3-8155-00c35d1096a7",
+                            Uid = "5ed96804-deeb-4139-aa45-c2c80f8c0bea",
                             Age = 10,
                             OwnerId = "user12",
                             Price = 20000,
@@ -542,7 +544,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "e5c79840-279a-4f14-ade7-6155738191ba",
+                            Uid = "574d36d3-1991-407c-8e21-bef7a3b73b1a",
                             Age = 10,
                             OwnerId = "user13",
                             Price = 20000,
@@ -550,7 +552,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "102e5464-03c2-4298-b8b3-456c762e52b5",
+                            Uid = "019e0fe8-cd1e-4ba0-81f8-6bbe9d69eff3",
                             Age = 10,
                             OwnerId = "user14",
                             Price = 20000,
@@ -558,7 +560,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "652a38e2-0de6-455d-8402-0a096446783a",
+                            Uid = "4b1dd94c-e5ba-4d90-b16f-100feaea9831",
                             Age = 10,
                             OwnerId = "user15",
                             Price = 20000,
@@ -566,7 +568,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "630bcea6-893f-43c5-8b17-fa194a1baa40",
+                            Uid = "d9074204-9537-4e65-91c6-e17e0dd10313",
                             Age = 10,
                             OwnerId = "user16",
                             Price = 20000,
@@ -574,7 +576,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "94387b93-944a-4e24-a084-9a00aba21bb8",
+                            Uid = "5a8df38a-d704-4dc0-841f-94fbf9c2bf5a",
                             Age = 10,
                             OwnerId = "user17",
                             Price = 20000,
@@ -582,7 +584,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "084599a9-8d58-428a-9799-1543fed0237d",
+                            Uid = "16ac288c-40fd-4295-b558-65d6d8c758d2",
                             Age = 10,
                             OwnerId = "user18",
                             Price = 20000,
@@ -590,7 +592,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "8e39203d-0292-4de5-8cee-dcc6df29a967",
+                            Uid = "292bf993-0e53-4cc7-bf0a-8237fc5e084a",
                             Age = 10,
                             OwnerId = "user19",
                             Price = 20000,
@@ -598,7 +600,7 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         },
                         new
                         {
-                            Uid = "6dc7ac57-b8e0-4db5-bd4c-a52795a69aba",
+                            Uid = "8b3d9815-76c5-4c6c-a67d-d07aea8d0e5d",
                             Age = 10,
                             OwnerId = "user20",
                             Price = 20000,
@@ -633,11 +635,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a81e040f-1e71-4d42-9c7b-f9ccdc33d95e",
+                            ConcurrencyStamp = "17f4bc96-662b-47b2-a43f-8403e70d8d95",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1f0bf182-32ed-4ae1-81db-2f569e00a929",
+                            SecurityStamp = "b5e13518-fa8f-4e82-86fe-75d5256f1235",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 1, 2, 3 },
@@ -648,11 +650,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4a39b190-24a3-4338-8a54-af4295ec1222",
+                            ConcurrencyStamp = "c75aaf83-e401-4563-a88e-ca78a1b546f4",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6627cc00-b91b-4e60-af45-c4ed21758fba",
+                            SecurityStamp = "dca328dc-c5cf-46e5-bc33-a3ea076b1623",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 2, 3, 4 },
@@ -663,11 +665,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user3",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "48ea21b2-12ac-4f30-9a3b-e93b5ffcc7e5",
+                            ConcurrencyStamp = "2ccf4782-3671-4783-ae72-232057570ed1",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "dfb64a47-3d99-40e7-a4f5-5846b8ec8c5e",
+                            SecurityStamp = "67b5894f-32b3-4fa9-b182-c682874d04dc",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 3, 4, 5 },
@@ -678,11 +680,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f5092573-db61-4d09-99b3-bfd22b211815",
+                            ConcurrencyStamp = "c6d79487-48f4-47fd-82b5-80ded8d6edf6",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1e57fcba-ea01-415d-874c-9ff10208cd81",
+                            SecurityStamp = "4b433189-4c01-48f6-9dfd-fe938e828c8c",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 4, 5, 6 },
@@ -693,11 +695,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "64e26b1f-9fb1-48fc-8d59-49847609bad5",
+                            ConcurrencyStamp = "bcea31ea-f395-423f-8745-d9236260e3c4",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0cb84053-5f8b-4e76-a1d0-c07ca451715e",
+                            SecurityStamp = "d0407c76-f329-4a94-852b-d24517478729",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 5, 6, 7 },
@@ -708,11 +710,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user6",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8d20e129-7ba8-4946-9dd8-eb9e76b9ffcc",
+                            ConcurrencyStamp = "849044e1-a437-4b4a-9df8-7d437142d413",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8151df17-3378-4d37-b993-f6b8dcb629e1",
+                            SecurityStamp = "75ce0926-a37c-42d8-8204-95df3f36359e",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 6, 7, 8 },
@@ -723,11 +725,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8db013d6-5c26-40e9-8161-05e5b20ebaf3",
+                            ConcurrencyStamp = "24264161-c051-43fa-bcfd-d5016dcd55a7",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "459478cc-59fc-400f-bb07-147a5c692be6",
+                            SecurityStamp = "c79e7c86-42bc-439d-a0a9-be4cbe442431",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 7, 8, 9 },
@@ -738,11 +740,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fc686557-ba6f-47c0-833d-079b7e11a662",
+                            ConcurrencyStamp = "87032b1b-039b-49c0-8424-b97b20feb555",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "153284ad-bae5-4529-be4e-c114268d914f",
+                            SecurityStamp = "212446b7-09d0-48b6-960f-5f47d18d80e9",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 8, 9, 10 },
@@ -753,11 +755,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a9565579-9d24-4694-9666-6352fa541ef4",
+                            ConcurrencyStamp = "0880f871-26ae-4180-af95-d2495ea5f17a",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "36890e58-5528-44a1-9976-fa3713d766ad",
+                            SecurityStamp = "b3de8d05-57ed-409c-b8b5-6eca6afc8a1e",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 9, 10, 11 },
@@ -768,11 +770,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user10",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "38919630-9512-40a1-9718-d0329c1ad04a",
+                            ConcurrencyStamp = "1106e0e9-d62f-49ec-89bf-3542df6eb5d7",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d359b2ce-d096-4b98-86cf-46a0f89d3c71",
+                            SecurityStamp = "e8db093d-d252-4bf8-baae-4cdfcf6c78c1",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 10, 11, 12 },
@@ -783,11 +785,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user11",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7aeb9624-e225-45e0-b013-650c2f910246",
+                            ConcurrencyStamp = "08d6412a-8d6e-4ca4-a69d-56754273cfb7",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4a11f381-e76d-459d-996a-1dfa6f59f3f1",
+                            SecurityStamp = "8579365b-c514-4fee-bd8d-5ba838f088a4",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 11, 12, 13 },
@@ -798,11 +800,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user12",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5d10dc39-88ba-463f-b561-d566e70a3b8d",
+                            ConcurrencyStamp = "755e45b4-4e71-46bf-83f9-9c771cea5f30",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1b242d13-19ff-41be-b92d-204daee39769",
+                            SecurityStamp = "7c39687b-d114-4f00-9019-e43b778ffc6c",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 12, 13, 14 },
@@ -813,11 +815,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user13",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "008cd088-a0e1-474d-a082-7812d813d6b6",
+                            ConcurrencyStamp = "da38c12e-5a3b-4e80-8e9b-8da08cba46b4",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "44b3b027-fe1a-4950-8007-a4cfded7e629",
+                            SecurityStamp = "32e942c6-ad51-4b9e-a6c9-d45d6bf2a8d4",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 13, 14, 15 },
@@ -828,11 +830,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user14",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6e55db02-10d3-452a-a2df-5ffd1cc12091",
+                            ConcurrencyStamp = "daba6323-97cc-451b-b82e-caeb08691243",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cbb342e3-b0b6-42bd-b2b6-28b47bd8b0f5",
+                            SecurityStamp = "9aa02e6a-e400-478b-8509-8f81f8cf2ae1",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 14, 15, 16 },
@@ -843,11 +845,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user15",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "71a121ac-a494-40cd-98e4-44aeb002c85d",
+                            ConcurrencyStamp = "26b3250c-b1ac-46c7-99cf-b4e78ee666e1",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "066b9ed5-1d9a-439f-97df-db90f5412ff6",
+                            SecurityStamp = "86c648a4-71e6-4139-867d-144dd61ee299",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 15, 16, 17 },
@@ -858,11 +860,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user16",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c19702e6-6084-40f6-98e9-4cf2e26572fe",
+                            ConcurrencyStamp = "ec0586c5-3400-4ca9-bc2a-13ec0b993655",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fb6e93f7-856f-4431-9fc3-dedbdbfae742",
+                            SecurityStamp = "88e72a6f-5bfa-4aed-bb15-fdac6a03366e",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 16, 17, 18 },
@@ -873,11 +875,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user17",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8ce6e55c-32d4-4041-a031-b79b4aa1efb0",
+                            ConcurrencyStamp = "5e5eff51-b264-43a6-b2f5-dae560154d32",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "363ea5ed-b0d0-498e-be6f-8e7b21e7287a",
+                            SecurityStamp = "75cc5102-62f2-4eea-a3b5-93a21017f9af",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 17, 18, 19 },
@@ -888,11 +890,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user18",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9055222a-7d9f-4a14-8c1f-1bf844c76444",
+                            ConcurrencyStamp = "f2990f92-e500-477d-b62f-e9db595b2b0d",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f435c633-0264-4bc6-bad8-2f22695b3fd8",
+                            SecurityStamp = "11d4709b-d389-4e5a-96ee-9ed6abae9c12",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 18, 19, 20 },
@@ -903,11 +905,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user19",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "35abbd1a-1e82-4a6b-816d-d6026e9e3d56",
+                            ConcurrencyStamp = "64ac0316-4af4-42a6-bd00-bb04bb648323",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c540e297-deac-4886-8e86-00d6c8daf285",
+                            SecurityStamp = "06cc9e05-7558-4ff4-a4b2-e8e498eac221",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 19, 20, 21 },
@@ -918,11 +920,11 @@ namespace XY56L7_SOF_2022231.Data.Migrations
                         {
                             Id = "user20",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f13f3d4f-c101-411a-ac48-a889b9472666",
+                            ConcurrencyStamp = "2bf136d3-2c47-4685-949d-3334262a5246",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8abb112b-ddfe-4187-934e-c4b938ddb590",
+                            SecurityStamp = "2391ac49-f404-497f-8815-14fc43824c46",
                             TwoFactorEnabled = false,
                             ContentType = "",
                             Data = new byte[] { 20, 21, 22 },

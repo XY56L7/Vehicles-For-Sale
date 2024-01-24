@@ -15,18 +15,18 @@ namespace XY56L7_SOF_2022231.Controllers
         private readonly UserManager<SiteUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<HomeController> _logger;
-        private readonly ICarLogic _carRepository;
+        private readonly ICarLogic _carLogic;
         private readonly IEmailSender _emailSender;
 
-        public HomeController(UserManager<SiteUser> userManager, RoleManager<IdentityRole> roleManager, ILogger<HomeController> logger, ICarLogic carRepository, IEmailSender emailSender)
+        public HomeController(UserManager<SiteUser> userManager, RoleManager<IdentityRole> roleManager, ILogger<HomeController> logger, ICarLogic carLogic, IEmailSender emailSender)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _logger = logger;
-            _carRepository = carRepository;
+            _carLogic = carLogic;
             _emailSender = emailSender;
         }
-
+        
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> RemoveAdmin(string uid)
         {
@@ -60,7 +60,7 @@ namespace XY56L7_SOF_2022231.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Admin()
         {
-            return View(_carRepository.GetAllCars());
+            return View(_carLogic.GetAllCars());
 
         }
         [Authorize(Roles = "Admin")]
@@ -71,7 +71,7 @@ namespace XY56L7_SOF_2022231.Controllers
 
         public IActionResult Index()
         {
-            return View(_carRepository.GetAllCars());
+            return View(_carLogic.GetAllCars());
         }
         [Authorize]
         public IActionResult Add()
@@ -84,11 +84,11 @@ namespace XY56L7_SOF_2022231.Controllers
         {
             car.OwnerId = _userManager.GetUserId(this.User);
 
-            var old = _carRepository.GetCarByTitleAndOwnerId(car.Title, car.OwnerId);
+            var old = _carLogic.GetCarByTitleAndOwnerId(car.Title, car.OwnerId);
 
             if (old == null)
             {
-                _carRepository.AddCar(car);
+                _carLogic.AddCar(car);
 
             }
 
@@ -98,14 +98,6 @@ namespace XY56L7_SOF_2022231.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Authorize]
-        public async Task<IActionResult> Privacy()
-        {
-            var principal = this.User;
-            var user = await _userManager.GetUserAsync(principal);
-
-            return View();
-        }
         public async Task<IActionResult> GetImage(string userid)
         {
             var principal = this.User;
@@ -118,7 +110,7 @@ namespace XY56L7_SOF_2022231.Controllers
         public IActionResult Delete(string uid)
         {
             var userId = _userManager.GetUserId(this.User);
-            _carRepository.DeleteCar(uid);
+            _carLogic.DeleteCar(uid);
 
             return RedirectToAction(nameof(Index));
         }
@@ -126,7 +118,7 @@ namespace XY56L7_SOF_2022231.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult AdminDelete(string uid)
         {
-            _carRepository.DeleteCar(uid);
+            _carLogic.DeleteCar(uid);
 
             return RedirectToAction(nameof(Index));
         }

@@ -20,6 +20,7 @@ namespace XY56L7_SOF_2022231.Data
             string[] firstNames = { "Alex", "Elena", "Victor", "Sophia", "Oliver", "Isabella", "Max", "Emma", "Leo", "Ava", "Liam", "Mia", "Gabriel", "Luna", "Sebastian", "Zoe", "Lucas", "Chloe", "Mateo", "Nora" };
             string[] lastNames = { "Anderson", "Martinez", "Smith", "Garcia", "Johnson", "Rodriguez", "Brown", "Lee", "Davis", "Hernandez", "Taylor", "Clark", "Lewis", "Walker", "Hall", "Young", "Hill", "Cooper", "Baker", "Ward" };
             string[] carModels = { "Spectra", "Phoenix", "Nebula", "Quantum", "Infinity", "Pegasus", "Aurora", "Raptor", "Zenith", "Vortex" };
+            string[] motorcycleModels = { "Streetfighter", "Cruiser", "Sportbike", "Touring", "Chopper", "Bobber", "Dirt Bike", "Scooter", "Cafe Racer", "Dual-Sport" };
 
             for (int i = 1; i <= 20; i++)
             {
@@ -30,7 +31,6 @@ namespace XY56L7_SOF_2022231.Data
 
                 SiteUser user = new SiteUser
                 {
-                    Wealth = 50000,
                     Id = $"user{i}",
                     FirstName = firstName,
                     LastName = lastName,
@@ -40,17 +40,22 @@ namespace XY56L7_SOF_2022231.Data
                 };
 
                 string carModel = carModels[i % carModels.Length];
+                string motorcycleModel = motorcycleModels[i% motorcycleModels.Length];
                 Car car = new Car
                 {
                     Uid = Guid.NewGuid().ToString(),
                     Title = $"{carModel} {i}",
-                    OwnerId = user.Id
+                    OwnerId = user.Id,
+                    Price = 20000,
+                    Age = 10
                 };
                 Motorcycle motorcycle = new Motorcycle
                 {
                     Uid = Guid.NewGuid().ToString(),
-                    Title = $"{carModel} {i}",
-                    OwnerId = user.Id
+                    Title = $"{motorcycleModel} {i}",
+                    OwnerId = user.Id,                    
+                    Price = 20000,
+                    Age = 10
                 };
                 builder.Entity<Motorcycle>().HasData(car);
                 builder.Entity<Car>().HasData(car);
